@@ -1,0 +1,94 @@
+/* Base styles */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0;
+  background-color: #ffffff;
+  color: #333333;
+  line-height: 1.6;
+}
+a {
+  color: #1a0dab;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+/* Navigation */
+nav {
+  background-color: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  padding: 1rem 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+nav a {
+  margin: 0 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+/* Layout container */
+.container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+/* Profile section */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #eaeaea;
+}
+.contact-info h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+.contact-info p {
+  margin: 0.25rem 0;
+  color: #666666;
+}
+/* Sections */
+section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 2px solid #eaeaea;
+  padding-bottom: 0.5rem;
+}
+/* About section */
+section#about {
+  margin-bottom: 3rem;
+}
+/* Lists */
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  margin: 0.5rem 0;
+}
+/* Social links */
+ul.social {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  list-style: none;
+}
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #666666;
+  border-top: 1px solid #eaeaea;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
