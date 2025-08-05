@@ -10,7 +10,7 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-F4T9R5FRCS');
+    gtag('config', 'G-XXXXXXXXXX');
   </script>
   <style>
     /* Base styles */
@@ -49,44 +49,45 @@
       margin: 2rem auto;
       padding: 0 1rem;
     }
-    /* Header */
-    header {
-      text-align: center;
-      margin-bottom: 3rem;
+    /* Profile section */
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
     }
-    header h1 {
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #eaeaea;
+    }
+    .contact-info h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
-    header p {
-      font-size: 1.125rem;
+    .contact-info p {
+      margin: 0.25rem 0;
       color: #666666;
-      margin-top: 0.5rem;
     }
-    /* Sections */
-    section {
+    /* About section */
+    section#about {
       margin-bottom: 3rem;
     }
-    section h2 {
+    section#about h2 {
       font-size: 1.75rem;
       margin-bottom: 0.75rem;
       border-bottom: 2px solid #eaeaea;
       padding-bottom: 0.5rem;
     }
-    /* Lists */
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    ul li {
-      margin: 0.5rem 0;
-    }
     /* Social links */
     ul.social {
       display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin: 1rem 0 0;
+      gap: 0.5rem;
+      padding: 0;
+      margin: 0.5rem 0 0;
+      list-style: none;
     }
     /* Footer */
     footer {
@@ -95,46 +96,35 @@
       color: #666666;
       border-top: 1px solid #eaeaea;
       padding: 1rem 0;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
   <nav>
     <a href="#about">Home</a>
-    <a href="#research">Research</a>
-    <a href="#publications">Publications</a>
-    <a href="#contact">Contact</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
     <a href="https://raw.githubusercontent.com/edoardoluna/edoardoluna.github.io/master/eluna_CV2.pdf" target="_blank">Resume</a>
   </nav>
   <div class="container">
-    <header>
-      <h1>Edoardo Luna</h1>
-      <p>PhD Candidate, Department of Physics, UT Austin</p>
-    </header>
+    <div class="profile">
+      <img src="IMG_0408.jpg" alt="Edoardo Luna" class="profile-img" />
+      <div class="contact-info">
+        <h1>Edoardo Luna</h1>
+        <p>PhD Candidate, Department of Physics, UT Austin</p>
+        <p>Email: <a href="mailto:edoardoluna@utexas.edu">edoardoluna@utexas.edu</a></p>
+        <ul class="social">
+          <li><a href="https://scholar.google.com/citations?hl=en&amp;user=WdpoxkAAAAAJ" target="_blank">Scholar</a></li>
+          <li><a href="https://www.linkedin.com/in/edoardoluna/" target="_blank">LinkedIn</a></li>
+          <li><a href="https://github.com/edoardoluna" target="_blank">GitHub</a></li>
+          <li><a href="https://twitter.com/edoardo_luna00" target="_blank">X</a></li>
+        </ul>
+      </div>
+    </div>
     <section id="about">
       <h2>About</h2>
       <p>I am a fourth-year physics PhD student working in Professor Dave Thirumalai's group at UT Austin. My research focuses on stochastic interacting systems in biological contexts. Before graduate school, I developed machine learning models for climate dynamics under Professor Dimitrios Giannakis.</p>
-    </section>
-    <section id="research">
-      <h2>Research Summary</h2>
-      <p>I work on stochastic interacting particle systems and operator-theoretic techniques to uncover trends in non-autonomous systems. My current projects involve the Dean–Kawasaki equation and active matter simulations.</p>
-    </section>
-    <section id="publications">
-      <h2>Publications</h2>
-      <ul>
-        <li><a href="https://www.nature.com/articles/s41467-024-48033-6" target="_blank">Revealing trends and persistent cycles of non-autonomous systems with autonomous operator-theoretic techniques</a></li>
-        <!-- Add additional publications here -->
-      </ul>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:edoardoluna@utexas.edu">edoardoluna@utexas.edu</a></p>
-      <ul class="social">
-        <li><a href="https://scholar.google.com/citations?hl=en&amp;user=WdpoxkAAAAAJ" target="_blank">Google Scholar</a></li>
-        <li><a href="https://www.linkedin.com/in/edoardoluna/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/edoardoluna" target="_blank">GitHub</a></li>
-        <li><a href="https://twitter.com/edoardo_luna00" target="_blank">X (formerly Twitter)</a></li>
-      </ul>
     </section>
   </div>
   <footer>
@@ -142,3 +132,4 @@
   </footer>
 </body>
 </html>
+
